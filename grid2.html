@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            height:300px;
+            width:400px;
+            border:1px solid rebeccapurple;
+            background-color: violet;
+            display:grid;
+            /* grid-template-columns:1FR 1FR; */
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+        .child1{
+            display:grid;
+            height:80px;
+            width:100px;
+            border:1px solid black;
+            background-color:rgb(102, 89, 114);
+            place-self: start;
+        }
+         .child2{
+            height:80px;
+            display:grid;
+            width:100px;
+            border:1px solid black;
+            background-color:rgb(102, 89, 114);
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            place-self: center;
+        } 
+        .child3{
+            display:grid;
+            height:80px;
+            width:100px;
+            border:1px solid black;
+            background-color:rgb(102, 89, 114);
+            place-self: end;
+        }        
+        @media(max-width:768px){
+            body{
+                background-color: rgb(129, 110, 147);
+            }
+        .child1{
+            height:80px;
+            width:100px;
+            border:1px solid black;
+            background-color:rgb(102, 89, 114);
+            display:grid;
+            place-self: center;
+        }
+        .child2{
+            height:80px;
+            width:100px;
+            border:1px solid black;
+            background-color:rgb(102, 89, 114);
+            display:grid;
+            place-self:center;
+        }
+            .child3{
+            height:80px;
+            width:100px;
+            border:1px solid black;
+            background-color:rgb(102, 89, 114);
+            display:grid;
+            place-self:center;
+        }
+        }
+         @media(max-width:480px){
+            body{
+                background-color: rgb(37, 126, 164);
+            }
+        .child1{
+            height:80px;
+            width:100px;
+            border:1px solid black;
+            background-color:rgb(102, 89, 114);
+            display:grid;
+            place-self: end;
+        }
+        .child2{
+            height:80px;
+            width:100px;
+            border:1px solid black;
+            background-color:rgb(102, 89, 114);
+            display:grid;
+            place-self: center;
+        }
+        .child3{
+            height:80px;
+            width:100px;
+            border:1px solid black;
+            background-color:rgb(102, 89, 114);
+            display:grid;
+            place-self:start;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child1"></div>
+        <div class="child2"></div>
+        <div class="child3"></div>
+    </div>
+</body>
+</html>
